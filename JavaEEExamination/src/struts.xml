@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="default" namespace="/" extends="json-default">
+        <action name="user_*" class="com.llk.action.UserAction" method="{1}">
+        <result name="registerSuccess" type="redirect">/login.jsp</result>
+        <result name="registerFailed">/register.jsp</result>
+         <result name="loginSuccess">/layout/left.jsp</result>
+        <result name="loginFailed">/login.jsp</result>
+        <result name="showLoginView">/login.jsp</result>
+        <result name="delete" type="json">
+        	<param name="root">result</param>
+        </result>
+           <result type="json">
+                <param name="root">result</param>
+            </result>
+        </action> 
+        <action name="menu_*" class="com.llk.action.MenuAction" method="{1}"></action>
+        <action name="paper_*" class="com.llk.action.PaperAction" method="{1}">
+        <result name="savePaperFailed">/exam/exam_insert.jsp</result>
+        <result name="showTestView" type="redirect">/exam/exam_test.jsp</result>
+        <result name="showSavePaperView" type="redirect">/exam/exam_insert.jsp</result>
+        </action>
+    </package>
+</struts>

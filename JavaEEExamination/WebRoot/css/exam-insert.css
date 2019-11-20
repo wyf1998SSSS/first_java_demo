@@ -1,0 +1,59 @@
+ html, body {
+			    margin: 0;
+			    overflow: hidden;
+			    width: 100%;
+			    height: 100%;
+				background-color: ghostwhite;
+			}
+			tr{
+				height: 90px;
+			}
+			td{
+				
+			}
+			table{
+				margin: auto;
+				margin-left: 35%;
+			}
+			select{
+				position: absolute;
+				left: 48%;
+			}
+			tr input[type=button]{
+				width: 400px;
+				height: 30px;
+				position: absolute;
+				left:40%;
+				font-size: 20px;
+				color: #8E6ECF;
+				background-color:#AEDA9B;
+				border-radius: 20px;
+				box-shadow:0 1px 5px #3caa00;
+			}
+			.insert_div{
+				width: 800px;
+				height: 800px;
+				margin: auto;
+				margin-top: 50px;
+			}
+			tr input[type=text]{
+				width: 400px;
+				height: 60px;
+				position: absolute;
+				left: 40%;
+			}
+			#paperTypeSpan{
+				position: absolute;
+				left: 55%;
+			}
+			span{
+				font-size:13px;
+				color: red;
+				position: absolute;
+				left:62%;
+				
+			}
+			#correctAnswerSpan{
+				position: absolute;
+				left:58%;
+			}
